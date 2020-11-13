@@ -37,11 +37,6 @@ export class ProductsController {
     return this.productsService.findById(id);
   }
 
-  @Put(':id')
-  update(@Param('id') id: string, @Body() updateProductDto: any) {
-    return this.productsService.update(id, updateProductDto);
-  }
-
   @Delete(':id')
   @HttpCode(HttpStatus.NO_CONTENT)
   remove(@Param('id') id: string) {

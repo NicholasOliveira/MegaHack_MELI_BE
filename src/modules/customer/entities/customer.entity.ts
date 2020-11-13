@@ -14,7 +14,7 @@ export class Customer {
   wharehouse: productStock[];
 }
 
-interface productStock {
+export interface productStock {
   product: Products;
   sell_quantity: number;
   income: number;
