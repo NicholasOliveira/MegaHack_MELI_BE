@@ -2,6 +2,9 @@ import { Customer } from 'src/modules/customer/entities/customer.entity';
 import { CreateProductDto } from 'src/modules/products/dto/create-product.dto';
 import { Products } from 'src/modules/products/entities/product.entity';
 
+// Cliente
+//Produtos no perfil do cliente. Produtos que ele vende ou vendeu
+
 export const FakeDataProducts: Products[] = [
   {
     id: '93f7ee17-7f8e-4228-a1ee-eae9c1ebe623',
@@ -53,6 +56,8 @@ export const FakeDataProducts: Products[] = [
   },
 ];
 
+//Informações do cliente
+//Wharehouse é o armazem e as vendas de um cliente, sempre haverá um produto associado(criado na outra variavel)
 export const FakeDataCustomers: Customer[] = [
   {
     name: 'Dona Lia Calçados',
@@ -93,6 +98,7 @@ export const FakeDataCustomers: Customer[] = [
   },
 ];
 
+//Lista de Produtos, para a predição
 const FakeProductsLists: CreateProductDto[] = [
   {
     product_category: 'shoes',
