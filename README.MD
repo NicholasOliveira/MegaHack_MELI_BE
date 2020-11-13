@@ -1,9 +1,6 @@
-<h1 align="center">Nosso Banco Digital - Bootcamp ZUP</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
-</p>
+<h1 align="center">MegaHack 5 - MELI</h1>
 
-> This project was created to develop a digital bank API, caring about the architecture and code efficiency regarding the code maintenance and evolution.
+> This project was created to provide Meli Project's backend functionality from MegaHack5.
 
 ## ⚙ Requirements
 
