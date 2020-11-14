@@ -20,4 +20,5 @@ export interface productStock {
   income: number;
   available: number;
   last_sale: Date;
+  sales_days: number;
 }
