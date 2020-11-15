@@ -2,8 +2,8 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity('products')
 export class Products {
-  @PrimaryGeneratedColumn('uuid')
-  id: string;
+  @PrimaryGeneratedColumn('increment')
+  id: number;
 
   @Column()
   product_name: string;
@@ -21,11 +21,17 @@ export class Products {
   price: number;
 
   @Column()
+  cost: number;
+
+  @Column({ nullable: true })
+  profit: number;
+
+  @Column({ nullable: true })
   average_sell: number;
 
-  @Column()
+  @Column({ nullable: true })
   rating: number;
 
-  @Column()
+  @Column({ nullable: true })
   relevance: number;
 }

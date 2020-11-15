@@ -1,7 +1,7 @@
 [
   {
     "type": "sqlite",
-    "database": ":memory:",
+    "database": "/mnt/d/CE_BKP/teste.db",
     "entities": ["dist/**/*.entity.js"],
     "synchronize": true,
     "logging": true

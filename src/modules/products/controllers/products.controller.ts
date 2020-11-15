@@ -27,6 +27,24 @@ export class ProductsController {
     return this.productsService.findBestPredictions(category);
   }
 
+  @Get('/predictionsmonth/:month/:project')
+  findBestPredictionsByMonth(
+    @Param('month') month: number,
+    @Param('project') project_id: number,
+  ) {
+    return this.productsService.getPredictionWithinAMonth(month, project_id);
+  }
+
+  @Get('/history')
+  getHistory() {
+    return this.productsService.getAllHistory();
+  }
+
+  @Get('/message/:id')
+  getBotMessage(@Param('id') message_id: number) {
+    return this.productsService.showMessages(message_id);
+  }
+
   @Get()
   findAll() {
     return this.productsService.findAll();

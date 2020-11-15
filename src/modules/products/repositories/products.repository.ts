@@ -16,6 +16,9 @@ export default class ProductsRepository extends Repository<Products> {
 
     products.relevance = relevance;
 
+    console.log((products.price - products.cost) / products.cost);
+    products.profit = (products.price - products.cost) / products.cost;
+
     return await this.save(products);
   }
 
