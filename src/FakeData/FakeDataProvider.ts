@@ -6,65 +6,6 @@ import { CreateSaleHistoryDto } from '../modules/products/dto/create-sale-histor
 // Cliente
 //Produtos no perfil do cliente. Produtos que ele vende ou vendeu
 
-// export const FakeDataProducts: Products[] = [
-//   {
-//     id: 11,
-//     product_name: 'Sapato preto alto',
-//     product_description: 'Sapato comum,preto',
-//     product_image:
-//       'https://icons.iconarchive.com/icons/icons8/windows-8/128/Clothing-Shoe-Man-icon.png',
-//     product_category: 'shoes',
-//     price: 120,
-//     average_sell: 23940,
-//     rating: 3,
-//     relevance: 24,
-//     cost: 12,
-//     profit: 23,
-//   },
-//   {
-//     id: 22,
-//     product_name: 'Sapato marrom alto',
-//     product_description: 'Sapato comum,marrom',
-//     product_image:
-//       'https://icons.iconarchive.com/icons/icons8/windows-8/128/Clothing-Shoe-Man-icon.png',
-//     product_category: 'shoes',
-//     price: 100,
-//     average_sell: 35000,
-//     rating: 3.5,
-//     relevance: 42,
-//     cost: 12,
-//     profit: 23,
-//   },
-//   {
-//     id: 33,
-//     product_name: 'Sapato prateado médio',
-//     product_description: 'Sapato prateado com cano médio',
-//     product_image:
-//       'https://icons.iconarchive.com/icons/icons8/windows-8/128/Clothing-Shoe-Man-icon.png',
-//     product_category: 'shoes',
-//     price: 98,
-//     average_sell: 50351,
-//     rating: 4,
-//     relevance: 69,
-//     cost: 12,
-//     profit: 23,
-//   },
-//   {
-//     id: 44,
-//     product_name: 'Sapato Scarpin',
-//     product_description: 'Sapato scarpin tradicional',
-//     product_image:
-//       'https://icons.iconarchive.com/icons/icons8/windows-8/128/Clothing-Shoe-Man-icon.png',
-//     product_category: 'shoes',
-//     price: 145,
-//     average_sell: 83241,
-//     rating: 4.5,
-//     relevance: 130,
-//     cost: 12,
-//     profit: 23,
-//   },
-// ];
-
 //Lista de Produtos, para a predição
 export const FakeProductsLists: CreateProductDto[] = [
   {
@@ -439,6 +380,7 @@ export const FakeSalesHistory: CreateSaleHistoryDto[] = [
   { sale_date: new Date(2020, 11, 13), product_id: 5, quantity: 0 },
 ];
 
+//Mensagens para exibir de 0 a 3.
 export const messages = [
   'notei que as vendas do produto Sapato feminino casual vem crescendo. Considerando o histórico de vendas, as 147 unidades no estoque não serão suficientes para a demanda prevista nos próximos dias (184). Está na hora de repor o estoque.',
   'Neste caso, recomendo divulgarmos o produto Sapato prateado salto baixo. Analisando o comportamento dos consumidores da sua loja, este modelo demonstra potencial para substituir o Sapato feminino casual. Um desconto de 5% pode alavancar suas vendas sem impactar tanto o lucro devido a margem aplicada maior do que as demais, tornando-o novo favorito entre os consumidores.',
