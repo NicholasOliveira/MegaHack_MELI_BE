@@ -40,9 +40,9 @@ export class ProductsController {
     return this.productsService.getAllHistory();
   }
 
-  @Get('/message/:id')
-  getBotMessage(@Param('id') message_id: number) {
-    return this.productsService.showMessages(message_id);
+  @Get('/message/:pergunta')
+  getBotMessage(@Param('pergunta') pergunta: string) {
+    return this.productsService.showMessages(pergunta);
   }
 
   @Get()
