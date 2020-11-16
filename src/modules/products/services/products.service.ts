@@ -98,7 +98,9 @@ export class ProductsService {
     return salesPrediction;
   }
 
-  public async showMessages(message_id: number): Promise<string> {
-    return messages[message_id];
+  public async showMessages(pergunta: string): Promise<Object> {
+    return messages.map((msg:any)=>(
+      msg.pergunta==pergunta&&msg
+    ))
   }
 }
